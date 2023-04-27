@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("d.jpg");
+
+  /* Control the height of the image */
+  height:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  max-width: 500px; /* set maximum width to 500px */
+  width: 100%; /* set width to 100% to fill parent element */
+}
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password]{
+  padding: 10px;
+  border: none;
+  background: #f1f1f1;
+  width: 80%;
+  
+}
+
+
+/* Set a style for the submit button */
+  input[type=submit] {
+  background-color: #6267d0;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="bg-img">
+   
+    <form action="../control/Registration.php" method="post" class="container" novalidate>
+        <h2>REGISTER</h2>
+
+        <label for="name"><b>Name</b></label>
+<input type="text" name="name" id="name" value="" placeholder="Full Name"><span></span><br><br>
+<label for="mob"><b>Mobile</b></label>
+<input type="text" name="mob" id="mob" value="" placeholder="Mobile no."><span></span><br><br>
+<label for="email"><b>Email</b></label>
+<input type="text" name="email" id="email" value="" placeholder="Email"><span></span><br><br>
+<label for="address"><b>Address</b></label>
+<input type="text" name="address" id="address" value="" placeholder="Address"><span><br><br>
+<label><b>Gender</b></label>&nbsp;
+<input type="radio" id="gender" name="gender" value="M">M&nbsp;
+<input type="radio" id="gender" name="gender" value="F">F&nbsp;<span></span><br><br>
+<label><b>Age</b></label><br>
+<input type="text" name="age" id="age" value="" placeholder="age"><span></span><br><br>
+<label><b>Password</b></label><br>
+<input type="password" name="password" id="pass" placeholder="Password" value=""><span></span><br><br>
+<input type="submit" name="submit" value="Submit">
+<p>
+              Already have an account? <a href="log.html">Login</a><br>
+      </p>
+      
+    </form>
+  </div>
+
+</body>
+
+</html>
